@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="images/funtech_baru.png" alt="FuntechPlaza" height="100px">
+        <img src="images/kritiksaran.png" alt="Kritik Saran" height="70px">
+        <img src="images/logo_jtp3_black.png" alt="Jatim Park 3" height="70px">
+    </header>
+
+    <form action="php/submit.php" method="POST">
+        <div class="container">
+            <div class="left-column">
+                <div class="form-group">
+                    <label for="nama"><b>Nama :</b></label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="no_hp"><b>Nomor HP</b></label>
+                    <input type="text" id="no_hp" name="no_hp" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email :</b></label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="asal"><b>Asal :</b></label>
+                    <input type="text" id="asal" name="asal">
+                </div>
+                <div class="form-group">
+                    <label for="berapa_kali"><b>Berapa Kali Kamu Bermain Disini :</b></label>
+                    <select name="berapa_kali" id="berapa_kali">
+                        <option value="1 Kali">1 Kali</option>
+                        <option value="2 Kali">2 Kali</option>
+                        <option value="3 Kali">3 Kali</option>
+                        <option value="4 Kali">4 Kali</option>
+                        <option value="5 Kali">5 Kali</option>
+                        <option value="6 Kali">6 Kali</option>
+                        <option value="7 Kali">7 Kali</option>
+                        <option value="8 Kali">8 Kali</option>
+                        <option value="9 Kali">9 Kali</option>
+                        <option value="10 Kali">10 Kali</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="info"><b>Darimana Kamu Tahu FuntechPlaza :</b></label>
+                    <select name="info" id="info">
+                        <option value="Loket Jatim Park 3">Loket Jatim Park 3</option>
+                        <option value="Sosial Media">Sosial Media</option>
+                        <option value="Website">Website</option>
+                        <option value="Lain-lain">Lain-lain</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fav"><b>Apa Wahana Favorit :</b></label>
+                    <select name="fav" id="fav">
+                        <option value="Archery">Archery</option>
+                        <option value="Balon Splash">Balon Splash</option>
+                        <option value="Bomb Hunter">Bomb Hunter</option>
+                        <option value="Boxer">Boxer</option>
+                        <option value="Color Pool">Color Pool</option>
+                        <option value="Creative Beach">Creative Beach</option>
+                        <option value="Cyclo Movie">Cyclo Movie</option>
+                        <option value="Dance in Motion">Dance in Motion</option>
+                        <option value="Dino Garden">Dino Garden</option>
+                        <option value="Dinopedia">Dinopedia</option>
+                        <option value="Face Swap">Face Swap</option>
+                        <option value="Fantastic Balloon">Fantastic Balloon</option>
+                        <option value="Fruit Ninja">Fruit Ninja</option>
+                        <option value="Geo Sand">Geo Sand</option>
+                        <option value="Hattrick League">Hattrick League</option>
+                        <option value="Jump O'line">Jump O'line</option>
+                        <option value="Just Dance">Just Dance</option>
+                        <option value="Laser Action">Laser Action</option>
+                        <option value="Lets Smash">Lets Smash</option>
+                        <option value="Light Step">Light Step</option>
+                        <option value="Magic Ball">Magic Ball</option>
+                        <option value="Magic Piano">Magic Piano</option>
+                        <option value="Paris in Rain">Paris in Rain</option>
+                        <option value="Project Cars 2">Project Cars 2</option>
+                        <option value="Robotic">Robotic</option>
+                        <option value="Rumble Racing">Rumble Racing</option>
+                        <option value="SketsaQuarium">SketsaQuarium</option>
+                        <option value="Sport Motion">Sport Motion</option>
+                        <option value="Smart Draw">Smart Draw</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Trampolin">Trampolin</option>
+                        <option value="Virtual Coaster">Virtual Coaster</option>
+                        <option value="VR Adventure">VR Adventure</option>
+                        <option value="VR Beat Saber">VR Beat Saber</option>
+                        <option value="VR River Rush">VR River Rush</option>
+                        <option value="VR Zombie">VR Zombie</option>
+                        <option value="Wall Climbing">Wall Climbing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="form-group">
+                    <label for="kritik_saran"><b>Kritik dan Saran :</b></label>
+                    <textarea name="kritik_saran" id="kritik_saran"></textarea required>
+                </div>
+                <div class="form-group">
+                    <label for="rating"><b>Overall Rating :</b></label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" class="star">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" class="star">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" class="star">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" class="star">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" class="star">&#9733;</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit"><b>Kirim Kritik dan Saran</b></button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+<p align="center" class="footer"><b>&copy; FuntechPlaza 2024</b></p>
+
+</body>
+</html>
